@@ -1,9 +1,7 @@
 console.log("JS file is connected to HTML! Woo!")
 
-var cardOne = "king";
-var cardTwo = "queen";
-var cardThree = "king";
-var cardFour = "queen";
+var cards = ['queen', 'king', 'queen', 'king'];
+var cardsInPlay = [];
 
 /* if (cardTwo === cardFour) {
 	alert ("You found a match!" );
@@ -19,10 +17,12 @@ var gameBoard = document.getElementByID ('game-board');
 
 var createCards = function () {
 
-for (i = 0; i<4 i++) {
+for (var i =; i < cards.length; i++{
 	var cardsElement = document.createElement('div');
 cardsElement.className = "card";
 gameBoard.appendChild(cardsElement);
+
+cardElement.setAttribute('data-card', cards [i]);
 
 }
 }
